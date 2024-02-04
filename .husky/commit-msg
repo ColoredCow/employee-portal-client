@@ -1,1 +1,1 @@
-npx --no -- commitlint --edit "$1"
+node @commitlint/cli/lib/cli.js --edit $1
