@@ -1,0 +1,86 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.6",
+    "formik": "^2.4.5",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "universal-cookie": "^7.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.23.4",
+    "@babel/plugin-transform-numeric-separator": "^7.23.4",
+    "@babel/plugin-transform-optional-chaining": "^7.23.4",
+    "@babel/plugin-transform-private-methods": "^7.23.3",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "37.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-security": "^2.1.0",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.4.1",
+    "tsc-files": "^1.1.4",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier . --ignore-path .gitignore",
+    "format:check": "prettier . --ignore-path .gitignore --check",
+    "format:fix": "prettier . --ignore-path .gitignore --write",
+    "lint": "eslint --ext .tsx,.ts .",
+    "lint:fix": "eslint --fix --ext .tsx,.ts .",
+    "type:check": "tsc",
+    "validate": "run-p lint type:check format:check",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint",
+      "npm test",
+      "git add"
+    ],
+    "*.{tsx,ts}": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
