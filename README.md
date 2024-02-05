@@ -44,3 +44,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 1. Development style guideline - [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react#airbnb-reactjsx-style-guide)
 2. File structure guide - [Guidelines to improve your React folder structure](https://maxrozen.com/guidelines-improve-react-app-folder-structure)
 3. Linting and CI setup - [Protect react codebase with Eslint, Prettier, Typescript, Lint-staged and husky](https://karthickragavendran.medium.com/protect-react-codebase-with-eslint-prettier-typescript-lint-staged-and-husky-9dd549bdb1c)
+4. Testing using Jest - [How to Start Testing Your React Apps Using the React Testing Library and Jest](https://www.freecodecamp.org/news/8-simple-steps-to-start-testing-react-apps-using-react-testing-library-and-jest/)
