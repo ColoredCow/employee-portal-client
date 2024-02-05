@@ -1,10 +1,10 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Home from 'pages/Home/Home'
-import Login from 'pages/Login/Login'
-import List from 'pages/List/List'
-import ForgotPassword from 'pages/ForgotPassword/ForgotPassword'
+import Home from 'src/pages/Home/Home'
+import Login from 'src/pages/Login/Login'
+import List from 'src/pages/List/List'
+import ForgotPassword from 'src/pages/ForgotPassword/ForgotPassword'
 
 const App = (): JSX.Element => {
   return (
