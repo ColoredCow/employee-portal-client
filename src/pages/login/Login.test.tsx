@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import Login from './Login'
-import { AllTheProviders } from 'src/utils/test-utils'
+import { AllTheProviders } from 'utils/test-utils'
 
 afterEach(cleanup)
 
