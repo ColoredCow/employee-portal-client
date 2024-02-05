@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        # with:
-        #   fetch-depth: 0 # 👈 Required to retrieve git history
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
       - name: Use Node.js 18.x
         uses: actions/setup-node@v2
         with:
