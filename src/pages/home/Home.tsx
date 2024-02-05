@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import { logout } from '../../helpers/auth-helpers'
+import { logout } from '../../utils/auth-utils'
 
 const Home: React.FC = () => {
   const navigate = useNavigate()

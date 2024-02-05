@@ -8,7 +8,8 @@ module.exports = {
   overrides: [
     {
       env: {
-        node: true
+        node: true,
+        jest: true
       },
       files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
@@ -22,7 +23,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', 'jest', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-floating-promises': 'off'
   },
