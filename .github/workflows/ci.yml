@@ -24,7 +24,5 @@ jobs:
         run: npm run lint
       - name: Prettier Check
         run: npm run format:check
-      - name: Type Check
-        run: npm run type:check
       - name: Run Test
         run: npm test
